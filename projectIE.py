@@ -1,4 +1,3 @@
-# **Plotly Basics**
 import streamlit as st
 import numpy as np
 import pandas as pd
@@ -7,7 +6,7 @@ import seaborn as sns
 import plotly.offline as pyo
 
 
-# create fake data:
+# create data:
 df = pd.read_csv('Admission.csv')
 pyo.plot([{
     'x': df.index,
@@ -62,7 +61,6 @@ plt.show()
 **Scatter Plots**
 **Line Charts**
 
-
 St.header ('Research')
 sex_dist=df['Research'].value_counts()
 st.dataframe(sex_dist)
@@ -75,4 +73,3 @@ fig, ax = plt.subplot
 ax.bar(sex_dist.index, sex_dist)
 st.pytplot(fig)
 
-**Distplots**
