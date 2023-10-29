@@ -58,8 +58,6 @@ plt.ylabel("Research")
 
 # Show the plot
 plt.show()
-**Scatter Plots**
-**Line Charts**
 
 St.header ('Research')
 sex_dist=df['Research'].value_counts()
